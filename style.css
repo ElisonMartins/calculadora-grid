@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.container {
+    background: linear-gradient(#686A6C, #F1A23D);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+
+.grid {
+    display: grid;
+    height: 480px;
+    width: 320px;
+}
+
+.item {
+    border-radius: 0;
+    opacity: 0.8;
+    border: 0.5px solid black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.item:hover{
+    opacity: 0.7;
+}
+
+.item:active{
+    background-color: white;
+    opacity: 0.3;
+    color:#4A494F;
+}
+.display {
+    grid-area: display;
+    background-color: #4A494F;
+    opacity: 0.7;
+    border: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.button-operations {
+    background-color: #5A5663;
+}
+
+.button-operations-right {
+    background-color: #F1A23D;
+}
+
+.button-numbers{
+    background-color: #75757D;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.plus-minus {
+    grid-area: plus-minus;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.division {
+    grid-area: division;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.point {
+    grid-area: point;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+
+.grid-template-areas {
+    grid-template-areas:
+        "display display display display"
+        "clear plus-minus percent division"
+        "seven eight nine multiplication"
+        "four five six minus"
+        "one two three plus"
+        "zero zero point equal"
+    ;
+}
